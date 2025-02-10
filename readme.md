@@ -25,7 +25,6 @@ Este repositório contém um projeto completo para **categorização automática
 - [Integração com Flask](#integração-com-flask)
 - [Geração de Gráficos](#geração-de-gráficos)
 - [Uso do Hugging Face Hub](#uso-do-hugging-face-hub)
-- [Licença](#licença)
 - [Contribuição](#contribuição)
 - [Contato](#contato)
 
@@ -124,6 +123,26 @@ O script:
 - Salva o modelo treinado em `results/modelo_finetuned`.
 - Utiliza um callback customizado para registrar métricas e gerar gráficos.
 
+## Geração de Gráficos
+
+Durante o treinamento e a avaliação do modelo, são gerados gráficos para acompanhar a evolução das métricas.
+
+### **Loss Durante o Treinamento**
+O gráfico abaixo exibe a perda (`loss`) ao longo dos passos do treinamento. A perda deve diminuir conforme o modelo aprende a classificar melhor os textos.
+
+<p align="center">
+  <img src="static/training_loss.png" width="600">
+</p>
+
+### **Loss na Avaliação por Época**
+O gráfico a seguir mostra a evolução da perda (`eval_loss`) durante a avaliação ao final de cada época. Ele ajuda a identificar se o modelo está melhorando ao longo do treinamento ou sofrendo de overfitting.
+
+<p align="center">
+  <img src="static/eval_loss.png" width="600">
+</p>
+
+Estes gráficos são gerados automaticamente pelo código presente no arquivo `src/plotting_callback.py`, que captura os logs de treinamento e avaliação para visualizar o desempenho do modelo.
+
 ## Integração com Flask
 
 O arquivo `app.py` contém uma API Flask que:
@@ -145,10 +164,6 @@ curl -X POST http://localhost:5000/categorize \
      -d '{"text": "Descrição do projeto..."}'
 ```
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
 ## Contribuição
 
 Contribuições são bem-vindas! Para colaborar:
@@ -162,6 +177,5 @@ Contribuições são bem-vindas! Para colaborar:
 
 ## Contato
 
-- **Nome:** [Seu Nome]
-- **Email:** [seu-email@example.com]
-- **GitHub:** [https://github.com/seu-usuario](https://github.com/seu-usuario)
+- **Nome:** Lucas Pinheiro
+- **GitHub:** [https://github.com/LucasAgroTech](https://github.com/LucasAgroTech)
