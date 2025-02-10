@@ -130,14 +130,14 @@ Durante o treinamento e a avaliação do modelo, são gerados gráficos para aco
 ### **Loss Durante o Treinamento**
 O gráfico abaixo exibe a perda (`loss`) ao longo dos passos do treinamento. A perda deve diminuir conforme o modelo aprende a classificar melhor os textos.
 
-<p align="center">
+<p align="left">
   <img src="static/training_loss.png" width="600">
 </p>
 
 ### **Loss na Avaliação por Época**
 O gráfico a seguir mostra a evolução da perda (`eval_loss`) durante a avaliação ao final de cada época. Ele ajuda a identificar se o modelo está melhorando ao longo do treinamento ou sofrendo de overfitting.
 
-<p align="center">
+<p align="left">
   <img src="static/eval_loss.png" width="600">
 </p>
 
