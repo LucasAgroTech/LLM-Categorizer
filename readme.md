@@ -1,5 +1,5 @@
-<p align="right">
-  <img src="nlp.png" width="150">
+<p align="left">
+  <img src="static/nlp.png" width="150">
 </p>
 
 # Projeto de Categorização Automática de Projetos
