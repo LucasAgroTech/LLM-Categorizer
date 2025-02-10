@@ -2,7 +2,7 @@
   <img src="static/nlp.png" width="150">
 </p>
 
-# Projeto de Categorização Automática de Projetos
+# Categorização Automática de Projetos
 
 Este repositório contém um projeto completo para **categorização automática de projetos** usando modelos de linguagem baseados em Transformers (BERT) para o português. O pipeline permite:
 - Carregar e pré-processar dados (CSV) com descrições de projetos.
